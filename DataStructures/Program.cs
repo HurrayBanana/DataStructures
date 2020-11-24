@@ -9,13 +9,12 @@ namespace DataStructures
         {
             Stack a = new Stack(10);
 
-            try
-            {
-                a.Pop();
-            }
-            catch
-            { }
-            
+            a.Push(10);
+            a.Push(10);
+            a.Push(10);
+            a.Push(10);
+            a.Peek(-2);
+
         }
     }
 }

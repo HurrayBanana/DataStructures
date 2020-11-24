@@ -40,7 +40,8 @@ namespace DataStructures
                 stack[sp] = item;
                 sp++;
             }
-            throw new Exception("STACK FULL");
+            else
+                throw new Exception("STACK FULL");
         }
 
         /// <summary>
@@ -56,6 +57,25 @@ namespace DataStructures
             }
             throw new Exception("STACK EMPTY");
         }
+
+        public int Peek()
+        {
+            if (sp > 0)
+            {
+                return stack[sp - 1];
+            }
+            throw new Exception("empty stack");
+        }
+        public int Peek(int offset)
+        {
+            if ((sp - 1 - offset) >= 0 &&
+                offset >= 0)
+            {
+                return stack[sp - 1 - offset];
+            }
+            throw new Exception("out of stack");
+        }
+
 
     }
 }

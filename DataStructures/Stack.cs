@@ -21,6 +21,9 @@ namespace DataStructures
         /// size set at construction
         /// </summary>
         int max;
+
+        public int Count { get { return sp; }}
+
         /// <summary>
         /// creates a stack with the given number of entries
         /// </summary>
@@ -66,11 +69,12 @@ namespace DataStructures
         /// <returns>a copy of the top value of the stack</returns>
         public int Peek()
         {
-            if (sp > 0)
-            {
-                return stack[sp - 1];
-            }
-            throw new Exception("empty stack");
+            return Peek(0);
+            //if (sp > 0)
+            //{
+            //    return stack[sp - 1];
+            //}
+            //throw new Exception("empty stack");
         }
         /// <summary>
         /// returns the item at the required offset fro the top of the stack

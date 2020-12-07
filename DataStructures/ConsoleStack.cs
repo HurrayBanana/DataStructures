@@ -6,6 +6,7 @@ namespace DataStructures
 {
     class ConsoleStack : Stack
     {
+
         public ConsoleStack(int size) 
             : base(size)
         {
@@ -13,9 +14,9 @@ namespace DataStructures
 
         public void Print()
         {
-            for (int i = 0; i < a.Count; i++)
+            for (int i = 0; i < this.Count; i++)
             {
-                Console.WriteLine(a.Peek(i));
+                Console.WriteLine(this.Peek(i));
             }
         }
     }

@@ -7,16 +7,16 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            Stack a = new Stack(10);
+            //Stack a = new Stack(10);
 
-            Stack superduper = new ConsoleStack(5);
+            ConsoleStack superduper = new ConsoleStack(5);
 
 
-            a.Push(10);
-            a.Push(4);
-            a.Push(8);
-            a.Push(9);
-
+            superduper.Push(10);
+            superduper.Push(4);
+            superduper.Push(8);
+            superduper.Push(9);
+            superduper.Print();
 
 
 
